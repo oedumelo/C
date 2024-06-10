@@ -1,4 +1,6 @@
-# Faça um algoritmo que contenha um vetor de inteiro de 4 posições. Leia 4 valores e posteriormente calcule a média e a soma dos valores.
+// https://www.youtube.com/watch?v=sFuv6m-_JrM
+
+// Faça um algoritmo que contenha um vetor de inteiro de 4 posições. Leia 4 valores e posteriormente calcule a média e a soma dos valores.
 
 #include <stdio.h>
 
@@ -31,4 +33,30 @@ int main() {
     printf("A media dos valores eh: %.1f\n", m);
 
     return 0;
+}
+
+// Faça um algoritmo que tenha dois vetores, A e B, de 4 posições. Leia os valores para o vetor A, posteriormente inclua os valores de A de forma inversa em B.
+// Por fim, imprima os dois vetores.
+
+#include<stdio.h>
+
+main(){
+	int vetor_a[4], vetor_b[4];
+	int ia, ib = 3;
+	
+	for(ia = 0; ia < 4; ia++){
+		printf("Digite um valor para a posicao %d :", ia);
+		scanf("%d", &vetor_a[ia]);
+	}
+	
+	for(ia = 0; ia < 4; ia++){
+		vetor_b[ib] = vetor_a[ia];
+		ib--;
+	}
+	
+	for(ia = 0; ia < 4; ia++){
+		printf("A[%d] = %d  B[%d] = %d\n", ia, vetor_a[ia], ia, vetor_b[ia]);
+	}
+	
+	return 0;
 }
