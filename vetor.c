@@ -1,4 +1,4 @@
-//Faça um algoritmo que contenha um vetor de inteiro de 4 posições. Leia 4 valores e posteriormente calcule a média e a soma dos valores.
+# Faça um algoritmo que contenha um vetor de inteiro de 4 posições. Leia 4 valores e posteriormente calcule a média e a soma dos valores.
 
 #include <stdio.h>
 
