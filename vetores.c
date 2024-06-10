@@ -60,3 +60,32 @@ main(){
 	
 	return 0;
 }
+
+// https://www.youtube.com/watch?v=oSJdSCHpPcc
+
+#include <stdio.h>
+
+main(){
+	int A[10], B[10];
+	int i;
+	
+	for(i = 0; i < 10; i++){
+		printf("Digite o valor da posicao %d : ", i);
+		scanf("%d", &A[i]);
+ 	}
+ 	
+ 	printf("\nSaida - Vetor A\n");
+ 	
+	for(i = 0; i < 10; i++){
+		printf("A[%d] = %d\n", i, A[i]);
+	}
+	
+	printf("\nSaida - Vetor B\n");
+	for(i = 0; i < 10; i++){
+		B[i] = A[i] * 10;
+		printf("B[%d] = %d\n", i, B[i]);
+	}
+	
+	
+	return 0;
+}
