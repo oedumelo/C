@@ -86,6 +86,5 @@ main(){
 		printf("B[%d] = %d\n", i, B[i]);
 	}
 	
-	
 	return 0;
 }
