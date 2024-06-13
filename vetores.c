@@ -4,6 +4,7 @@
 #include <stdio.h>
 
 int main() {
+	
     int vetor_n[4];
     int i, s = 0;
     float m;
@@ -39,6 +40,7 @@ int main() {
 #include<stdio.h>
 
 main(){
+	
 	int vetor_a[4], vetor_b[4];
 	int ia, ib = 3;
 	
@@ -65,6 +67,7 @@ main(){
 #include <stdio.h>
 
 main(){
+	
 	int A[10], B[10];
 	int i;
 	
@@ -94,6 +97,7 @@ main(){
 #include <stdio.h>
 
 int main(){
+	
 	int vetor[5], i, soma = 0;
 	
 	for(i = 0; i < 5; i++){
@@ -112,6 +116,7 @@ int main(){
 #include <stdio.h>
 
 int main(){
+	
 	int vetor[5], i, soma = 0, media;
 	
 	for(i = 0; i < 5; i++){
@@ -170,3 +175,42 @@ int main(){
 //a) imprima os números do vetor que são maiores que o valor referência.
 //b) retorne quantos números armazenados no vetor são menores que o valor de referência.
 //c) retorne quantas vezes o valor de referência aparece no vetor.
+
+#include <stdio.h>
+
+int main(){
+	
+	int vetor[10], i, ref, quant_menores = 0, igual_ref = 0;
+	
+	for (i = 0; i < 10; i++){
+		printf("Digite o valor %d : ", i + 1);
+		scanf("%d", &vetor[i]);
+	}
+	
+	printf("\nDigite um valor referencial: ");
+	scanf("%d", &ref);
+	
+	printf("\nValores maiores que a referencia:");
+	for (i = 0; i < 10; i++){
+		if(vetor[i] > ref){
+			printf("\n%d", vetor[i]);
+		}
+	}
+	
+	for (i = 0; i < 10; i++){
+		if(vetor[i] < ref){
+			quant_menores++;
+		}
+	}
+	printf("\n\nQuantidade de valores menores que a referencia: %d", quant_menores);
+	
+	for (i = 0; i < 10; i++){
+		if(vetor[i] == ref){
+			igual_ref++;
+		}
+	}
+	printf("\n\nQuantidade de vezes que o referencial aparece no vetor: %d", igual_ref);
+	
+	return 0;
+}
+
