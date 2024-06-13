@@ -1,5 +1,4 @@
 // https://www.youtube.com/watch?v=sFuv6m-_JrM
-
 // Faça um algoritmo que contenha um vetor de inteiro de 4 posições. Leia 4 valores e posteriormente calcule a média e a soma dos valores.
 
 #include <stdio.h>
@@ -35,8 +34,7 @@ int main() {
     return 0;
 }
 
-// Faça um algoritmo que tenha dois vetores, A e B, de 4 posições. Leia os valores para o vetor A, posteriormente inclua os valores de A de forma inversa em B.
-// Por fim, imprima os dois vetores.
+// Faça um algoritmo que tenha dois vetores, A e B, de 4 posições. Leia os valores para o vetor A, posteriormente inclua os valores de A de forma inversa em B. Por fim, imprima os dois vetores.
 
 #include<stdio.h>
 
@@ -62,6 +60,7 @@ main(){
 }
 
 // https://www.youtube.com/watch?v=oSJdSCHpPcc
+// Crie dois vetores onde o primeiro será para armazenar 10 valores e o segundo será para armazenar os valores digitados no primeiro vetor * 10.
 
 #include <stdio.h>
 
@@ -88,3 +87,86 @@ main(){
 	
 	return 0;
 }
+
+//https://www.sorocaba.unesp.br/Home/Graduacao/EngenhariaAmbiental/antonio/exercicios-com-vetores---respostas.pdf
+//1º- Faça um programa que leia 5 valores inteiros, armazeno-os em um vetor, calcule e apresente a soma destes valores.
+
+#include <stdio.h>
+
+int main(){
+	int vetor[5], i, soma = 0;
+	
+	for(i = 0; i < 5; i++){
+		printf("Digite o valor de  posicao %d: ", i + 1);
+		scanf("%d", &vetor[i]);
+		soma += vetor[i];
+	}
+	
+	printf("\nA soma entre os valores digitados eh: %d", soma);
+	
+	return 0;
+}
+
+//2º- Altere o programa anterior para calcular e apresentar a média dos valores entrados e aqueles que sãomaiores e menores que a média.
+
+#include <stdio.h>
+
+int main(){
+	int vetor[5], i, soma = 0, media;
+	
+	for(i = 0; i < 5; i++){
+		printf("Digite o valor de  posicao %d : ", i + 1);
+		scanf("%d", &vetor[i]);
+		soma += vetor[i];
+	}
+	
+	printf("\nA soma entre os valores digitados eh: %d\n", soma);
+	
+	media = soma / i + 1;
+	printf("\nMedia entre os valores digitados: %d\n", media);
+	
+	printf("\nValores digitados maiores que a media: \n");
+	for(i = 0; i < 5; i++){
+		if(vetor[i] > media){
+			printf("%d\n", vetor[i]);
+		}
+	}
+	
+	printf("\n");
+	
+	printf("\nValores digitados menores que a media: \n");
+	for(i = 0; i < 5; i++){
+		if(vetor[i] < media){
+			printf("%d\n", vetor[i]);
+		}
+	}
+	
+	return 0;
+}
+
+//3º- Faça um programa que leia 10 valores reais e os apresente na ordem inversa entrada.
+
+#include <stdio.h>
+
+int main(){
+	
+	int vetor[10], i;
+	
+	for(i = 0; i < 10; i++){
+		printf("Digite o valor %d : ", i + 1);
+		scanf("%d", &vetor[i]);
+	}
+	
+	printf("\nValores digitados (ordem inversa): \n");
+	
+	for(i = 9; i >= 0; i--){
+		printf("%d\n", vetor[i]);
+	}
+	
+	return 0;
+}
+
+//4º- Faça um programa que leia 10 números inteiros, armazene-os em um vetor, solicite um valor de referência inteiro e:
+//a) imprima os números do vetor que são maiores que o valor referência.
+//b) retorne quantos números armazenados no vetor são menores que o valor de referência.
+//c) retorne quantas vezes o valor de referência aparece no vetor.
