@@ -1,4 +1,4 @@
-# Função
+# Funcao
 // Calculadora de adição usando função.
 
 #include <stdio.h>
